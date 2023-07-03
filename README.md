@@ -6,7 +6,7 @@ This Python script performs various image processing operations on a set of imag
 
 - Git: Install Git and use 'git clone' to get the repository, including examples in subfolders.
 - Python3 or later with pip
-- Python libraries(see 'requirements.txt')
+- Python libraries(see '$requirements.txt')
 
 ## Usage
 
