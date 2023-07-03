@@ -1,4 +1,4 @@
-﻿# Computing Npq from 2D Images
+# Computing Npq from 2D Images
 
 This Python script performs various image processing operations on a set of images to compute NPQ (Non-Photochemical Quenching). The script is named `compute_npq.py` and requires Python 3 or later.
 
@@ -15,7 +15,9 @@ This Python script performs various image processing operations on a set of imag
 3. Check if pip is installed for your target Python version: `python3.x -m pip --version`. If pip is not found, install it using the following commands:
 
 `wget https://bootstrap.pypa.io/get-pip.py`
+
 `python3.x get-pip.py`
+
 `rm -f get-pip.py`
 
 4. Open a terminal or command prompt and clone the repository:
@@ -25,6 +27,7 @@ This Python script performs various image processing operations on a set of imag
 5. Install Python dependencies:
 
 `cd compute_npq`
+
 `python3 -m pip install --upgrade -r requirements.txt`
 
 6. Install an appropriate text editor to edit the code, if needed.
