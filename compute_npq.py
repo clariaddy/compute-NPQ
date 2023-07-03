@@ -1,3 +1,5 @@
+###Importing Libraries and Modules:
+
 import os
 import numpy as np
 import scipy as sp
@@ -6,7 +8,9 @@ from PIL import Image
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# Get the current script directory
+###Setting up Directories:
+
+# Get the current directory
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Define input and output directories
@@ -17,9 +21,13 @@ output_dir = os.path.join(script_dir, 'out')
 if not os.path.isdir(output_dir):
     os.makedirs(output_dir)
 
+###Creating the Main Figure and Axes:
+
 # Create the main figure and axes for the polar plot
 main_fig, main_axe = plt.subplots(ncols=1, nrows=1, figsize=(8, 8), subplot_kw={'projection': 'polar'})
 main_axe.set_title('Mean intensity for all inputs')
+
+###Image Processing Loop:
 
 # Loop over a range of 10 iterations
 for i in range(1):
@@ -42,6 +50,8 @@ for i in range(1):
             raise RuntimeError(f"Could not find image '{img_path}'")
 
         print(f"Handling image '{img_path}'...")
+
+        ###Image Loading and Processing:
 
         # Load the image and convert it to a float32 numpy array
         img = Image.open(img_path)
@@ -88,6 +98,8 @@ for i in range(1):
         polar = interpolator(Y.ravel(), X.ravel(), grid=False).T.reshape(X.shape)
         intensity = polar.mean(axis=0)
 
+        ###Plotting and Saving:
+
         # Create a new figure and axes for plotting
         fig, axes = plt.subplots(ncols=2, nrows=2, figsize=(14, 8))
 
@@ -124,6 +136,8 @@ for i in range(1):
             main_axe.plot(θ, intensity, c='b', label='T=0' if i == 0 else None)
         else:
             main_axe.plot(θ, intensity, c='r', label='T=15' if i == 0 else None)
+
+        ###Finalizing and Saving:
 
         main_axe.legend()
 
