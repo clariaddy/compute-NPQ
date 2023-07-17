@@ -41,22 +41,6 @@ A sample of input `.png` files should be available in the `data` folder and can 
 ## Author and acknowledgment
 The authors would like to acknowledge Jean-Baptiste Keck for providing valuable feedback on the code.
 
-## Citation
-If you use this script, please cite it as below:
-#APA
-Uwizeye, C.(2023). Compute-NPQ (Version 1.0.0) [Python script]. https://doi.org/10.5281/zenodo.8155231
-
-#BibTex
-@software{Uwizeye_compute_NPQ_2023,
-  author = {Uwizeye, Clarisse},
-  doi = {10.5281/zenodo.8155231},
-  month = {07},
-  title = {{Compute-NPQ}},
-  url = {https://github.com/clariaddy/compute-NPQ},
-  version = {1.0.0},
-  year = {2023}
-}
-
 ## License
 This project is licensed under the MIT License.
 
