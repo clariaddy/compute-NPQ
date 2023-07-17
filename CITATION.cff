@@ -1,10 +1,10 @@
 cff-version: 1.1.0
-message: "If you use this script, please cite it as below."
-author:
-  - family-name:"Uwizeye"
-    given-name:"Clarisse"
-    orcid: https://orcid.org/0000-0002-5323-6098
-title: "Compute-NPQ"
+message: "If you use this python script, please cite it as below."
+authors:
+- family-names:"Uwizeye"
+  given-names:"Clarisse"
+  orcid: https://orcid.org/0000-0002-5323-6098
+title: "Compute-NPQ python script"
 version: v.1.0.0
 doi: 10.5281/zenodo.8155231
 date-released: 2023-07-17
